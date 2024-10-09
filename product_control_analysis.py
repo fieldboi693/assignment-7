@@ -42,9 +42,4 @@ print(reviews)
 print("Sentiment Tally:")
 print(f"Positive: {positive_count}")
 print(f"Negative: {negative_count}")
-
-def create_summary(review, length=100):
-    return review[:length] + "..." if len(review) > length else review
-for review in reviews:
-    summary = create_summary(review)
-    print(summary)
+print(review[:30] + '...')
